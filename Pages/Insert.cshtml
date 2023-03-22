@@ -1,0 +1,37 @@
+@page 
+@model Project.Pages.Insert
+@using ChinookEntities
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" />
+    <title>Chinook - Insert</title>
+  </head>
+  <body>
+    <h1>@Model.Heading</h1>
+    <h3><a asp-page="/Index">Go Back</a></h3>
+    <div class="d-flex justify-content-start">
+      <form action="~/Insert" method="post">
+        @Html.AntiForgeryToken()
+        <div class="mb-3">
+          <label for="AlbumTitle" class="form-label">Album Title</label>
+          <input type="text" name="albTitle" class="form-control form-control-sm" id="AlbumTitle" aria-describedby="emailHelp" required/>
+        </div>
+        <div class="mb-3">
+          <label for="ArtistId" class="form-label">Artist ID</label>
+          <input type="text" name="artID" class="form-control form-control-sm" id="ArtistId" required/>
+        </div>
+        <div class="mb-3">
+        <button type="submit" class="btn btn-primary">Submit</button>
+        </div>
+      </form>
+    </div>
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+  </body>
+</html>
