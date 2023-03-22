@@ -70,7 +70,7 @@ namespace Project.Pages
         throw;
     }
 
-    return RedirectToPage("~/Index");
+    return RedirectToPage("Index");
 }
 
     }

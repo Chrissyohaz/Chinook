@@ -19,11 +19,11 @@
         @Html.AntiForgeryToken()
         <div class="mb-3">
           <label for="AlbumTitle" class="form-label">Album Title</label>
-          <input type="text" asp-for="Album.Title" name="AlbumTitle" class="form-control form-control-sm" id="AlbumTitle" aria-describedby="emailHelp" required/>
+          <input type="text" asp-for="Album.Title" name="Album.Title" class="form-control form-control-sm" id="AlbumTitle" aria-describedby="emailHelp" required/>
         </div>
         <div class="mb-3">
           <label for="ArtistId" class="form-label">Artist ID</label>
-          <input type="text" asp-for="Album.ArtistId" name="ArtistId" class="form-control form-control-sm" id="ArtistId" required/>
+          <input type="text" asp-for="Album.ArtistId" name="Album.ArtistId" class="form-control form-control-sm" id="ArtistId" required/>
         </div>
         <div class="mb-3">
         <button type="submit" class="btn btn-primary">Submit</button>

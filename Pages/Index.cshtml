@@ -36,7 +36,7 @@
                           <input type="hidden" name="hdnAlbumId" value="@albums.AlbumId">
                           <input class="btn-danger" type="submit" value="Delete">
                       </form>
-                      <form method="post" asp-page-handler="OnPost" class="d-inline-block">
+                      <form action="~/Update/@albums.AlbumId" class="d-inline-block">
                           @Html.AntiForgeryToken()
                           <input type="hidden" name="hdnAlbumId" value="@albums.AlbumId">
                           <input class="btn-success" type="submit" value="Update">

@@ -18,6 +18,7 @@ namespace WebApp.Pages
         public List<Artist> artists { get; set; }
         public void OnGet()
         {
+
             Heading = "Chinook Music Store";
 
             ChinookDatabase db = new ChinookDatabase();
@@ -25,5 +26,15 @@ namespace WebApp.Pages
             artists = db.artists.ToList();
 
         }
+
+
+
+        public IActionResult OnPost(int hdnAlbumId)
+        {
+            ChinookDatabase db = new ChinookDatabase();
+            var album = db.albums.Where(aa => aa.AlbumId == hdnAlbumId).FirstOrDefault(); if (album == null) return NotFound(hdnAlbumId); album.Title = $"*{album.Title}*"; db.SaveChanges(); return Redirect("~/Index");
+        }
+
+
     }
 }
