@@ -6526,11 +6526,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "d:\\UWS\\Internet Scripting\\Project\\CourseworkTwo\\CourseworkTwo\\Project\\Project.csproj",
+      "projectUniqueName": "C:\\Users\\ohaz8\\OneDrive - University of the West of Scotland\\Desktop\\Chinook-master\\Project.csproj",
       "projectName": "Project",
-      "projectPath": "d:\\UWS\\Internet Scripting\\Project\\CourseworkTwo\\CourseworkTwo\\Project\\Project.csproj",
+      "projectPath": "C:\\Users\\ohaz8\\OneDrive - University of the West of Scotland\\Desktop\\Chinook-master\\Project.csproj",
       "packagesPath": "C:\\Users\\ohaz8\\.nuget\\packages\\",
-      "outputPath": "d:\\UWS\\Internet Scripting\\Project\\CourseworkTwo\\CourseworkTwo\\Project\\obj\\",
+      "outputPath": "C:\\Users\\ohaz8\\OneDrive - University of the West of Scotland\\Desktop\\Chinook-master\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\ohaz8\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -6589,7 +6589,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.404\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.407\\RuntimeIdentifierGraph.json"
       }
     }
   }

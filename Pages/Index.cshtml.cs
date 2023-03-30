@@ -16,25 +16,43 @@ namespace WebApp.Pages
         public string Heading { get; set; }
         public List<Album> albums { get; set; }
         public List<Artist> artists { get; set; }
-        public void OnGet()
-        {
+        private readonly ChinookDatabase _db;
 
+        [BindProperty]
+        public string SearchTerm { get; set; }
+
+        public ViewAlbums(ChinookDatabase db)
+        {
+            _db = db;
+        }
+
+        public async Task OnGetAsync(string searchTerm)
+        {
             Heading = "Chinook Music Store";
 
-            ChinookDatabase db = new ChinookDatabase();
-            albums = db.albums.Include(a => a.artists).ToList();
-            artists = db.artists.ToList();
+            IQueryable<Album> albumsQuery = _db.albums.Include(a => a.artists);
+            IQueryable<Artist> artistsQuery = _db.artists;
 
+            if (!string.IsNullOrEmpty(searchTerm))
+            {
+                string searchTermLower = searchTerm.ToLower();
+                albumsQuery = albumsQuery.Where(a => a.Title.ToLower().Contains(searchTermLower)
+                                                  || a.artists.Name.ToLower().Contains(searchTermLower));
+                artistsQuery = artistsQuery.Where(a => a.Name.ToLower().Contains(searchTermLower));
+            }
+
+            albums = await albumsQuery.ToListAsync();
+            artists = await artistsQuery.ToListAsync();
         }
 
 
-
-        public IActionResult OnPost(int hdnAlbumId)
+        public async Task<IActionResult> OnPostAsync(int hdnAlbumId)
         {
-            ChinookDatabase db = new ChinookDatabase();
-            var album = db.albums.Where(aa => aa.AlbumId == hdnAlbumId).FirstOrDefault(); if (album == null) return NotFound(hdnAlbumId); album.Title = $"*{album.Title}*"; db.SaveChanges(); return Redirect("~/Index");
+            Album album = await _db.albums.FirstOrDefaultAsync(aa => aa.AlbumId == hdnAlbumId);
+            if (album == null) return NotFound(hdnAlbumId);
+            _db.albums.Remove(album);
+            await _db.SaveChangesAsync();
+            return Redirect("~/Index");
         }
-
-
     }
 }
