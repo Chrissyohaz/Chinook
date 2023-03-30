@@ -6526,11 +6526,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\ohaz8\\OneDrive - University of the West of Scotland\\Desktop\\Chinook-master\\Project.csproj",
+      "projectUniqueName": "C:\\Users\\ohaz8\\OneDrive - University of the West of Scotland\\Documents\\GitHub\\Chinook\\Project.csproj",
       "projectName": "Project",
-      "projectPath": "C:\\Users\\ohaz8\\OneDrive - University of the West of Scotland\\Desktop\\Chinook-master\\Project.csproj",
+      "projectPath": "C:\\Users\\ohaz8\\OneDrive - University of the West of Scotland\\Documents\\GitHub\\Chinook\\Project.csproj",
       "packagesPath": "C:\\Users\\ohaz8\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\ohaz8\\OneDrive - University of the West of Scotland\\Desktop\\Chinook-master\\obj\\",
+      "outputPath": "C:\\Users\\ohaz8\\OneDrive - University of the West of Scotland\\Documents\\GitHub\\Chinook\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\ohaz8\\AppData\\Roaming\\NuGet\\NuGet.Config"

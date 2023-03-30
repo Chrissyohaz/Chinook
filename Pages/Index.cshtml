@@ -23,8 +23,8 @@
 
     <div class="overflow-auto" style="min-height:200px;max-height:500px">
       <table class="table table-hover">
-        <thead>
-          <tr>
+        <thead class="sticky-top" style="position: sticky; top: 0">
+          <tr style="background-color: #fff;">
             <th scope="col">Title</th>
             <th scope="col">Artist Name</th>
             <th></th>
@@ -38,22 +38,25 @@
                     <td>@albums.Title</td>
                     <td>@(albums.artists != null ? albums.artists.Name : "")</td>
                     <td>
-                      <form action="~/Delete" method="post" onsubmit="return confirm('Are you sure you want to delete this album?');">
-                          @Html.AntiForgeryToken()
-                          <input type="hidden" name="hdnAlbumId" value="@albums.AlbumId">
-                          <input class="btn-danger" type="submit" value="Delete">
-                      </form>
-                      <form action="~/Update/@albums.AlbumId" class="d-inline-block">
-                          @Html.AntiForgeryToken()
-                          <input type="hidden" name="hdnAlbumId" value="@albums.AlbumId">
-                          <input class="btn-success" type="submit" value="Update">
-                      </form>
+                      <div class="d-flex flex-row">
+                          <form action="~/Delete" method="post" onsubmit="return confirm('Are you sure you want to delete this album?');">
+                              @Html.AntiForgeryToken()
+                              <input type="hidden" name="hdnAlbumId" value="@albums.AlbumId">
+                              <input class="btn-danger" type="submit" value="Delete">
+                          </form>
+                          <form action="~/Update/@albums.AlbumId" class="d-inline-block">
+                              @Html.AntiForgeryToken()
+                              <input type="hidden" name="hdnAlbumId" value="@albums.AlbumId">
+                              <input class="btn-success" type="submit" value="Update">
+                          </form>
+                      </div>
                     </td>
                 </tr>
             }
         </tbody>
       </table>
     </div>
+
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="~/js/site.js" asp-append-version="true"></script>
