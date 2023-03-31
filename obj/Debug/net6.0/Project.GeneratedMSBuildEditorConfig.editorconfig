@@ -8,41 +8,41 @@ build_property.PlatformNeutralAssembly =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = Project
 build_property.RootNamespace = Project
-build_property.ProjectDir = c:\Users\ohaz8\Documents\GitHub\Chinook\
+build_property.ProjectDir = C:\Users\ohaz8\Documents\GitHub\Chinook\
 build_property.RazorLangVersion = 6.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = c:\Users\ohaz8\Documents\GitHub\Chinook
+build_property.MSBuildProjectDirectory = C:\Users\ohaz8\Documents\GitHub\Chinook
 build_property._RazorSourceGeneratorDebug = 
 
-[c:/Users/ohaz8/Documents/GitHub/Chinook/Pages/Delete.cshtml]
+[C:/Users/ohaz8/Documents/GitHub/Chinook/Pages/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRGVsZXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/Users/ohaz8/Documents/GitHub/Chinook/Pages/Index.cshtml]
+[C:/Users/ohaz8/Documents/GitHub/Chinook/Pages/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/Users/ohaz8/Documents/GitHub/Chinook/Pages/Insert.cshtml]
+[C:/Users/ohaz8/Documents/GitHub/Chinook/Pages/Insert.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW5zZXJ0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/Users/ohaz8/Documents/GitHub/Chinook/Pages/Shared/_Layout.cshtml]
+[C:/Users/ohaz8/Documents/GitHub/Chinook/Pages/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/Users/ohaz8/Documents/GitHub/Chinook/Pages/Shared/_ValidationScriptsPartial.cshtml]
+[C:/Users/ohaz8/Documents/GitHub/Chinook/Pages/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/Users/ohaz8/Documents/GitHub/Chinook/Pages/Update.cshtml]
+[C:/Users/ohaz8/Documents/GitHub/Chinook/Pages/Update.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVXBkYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/Users/ohaz8/Documents/GitHub/Chinook/Pages/_ViewImports.cshtml]
+[C:/Users/ohaz8/Documents/GitHub/Chinook/Pages/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[c:/Users/ohaz8/Documents/GitHub/Chinook/Pages/_ViewStart.cshtml]
+[C:/Users/ohaz8/Documents/GitHub/Chinook/Pages/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
